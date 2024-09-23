@@ -37,10 +37,6 @@ jobs:
         run: |
          sed -i 's@<p id="myname"></p>@<p id="myname">${{ vars.MY_NAME }}</p>@g' index.html      
          cat index.html
-
-між Setup Pages та Upload artifact степами.
-
-І тоді можна запустити вручну воркфлоу і відпрацює як очікувано)
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
